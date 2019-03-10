@@ -3,3 +3,4 @@ composer.phar
 /composer.lock
 /.idea
 /nbproject/private/
+/nbproject/private
