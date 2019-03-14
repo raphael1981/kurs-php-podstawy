@@ -34,5 +34,14 @@ $tab = [
 
 var_dump($tab);
 
+//
+
+$arrayAssoc = [
+  'name'=>'Bob',
+  'email'=>'test@wp.pl',
+  'id_number'=>97465
+];
+
+print_r($arrayAssoc);
 
 echo '</pre>';

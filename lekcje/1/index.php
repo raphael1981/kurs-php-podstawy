@@ -10,15 +10,16 @@
 <body>
 
 <?php
+$files = array_slice(scandir(__DIR__),2);
+sort($files);
 
-    foreach (array_slice(scandir(__DIR__),2) as $f){
-        if($f!='index.php') {
-            echo '<br>';
-            echo "<a href=\"http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . "$f\">$f</a>";
-            echo '<br>';
-        }
+foreach ($files as $f){
+    if($f!='index.php') {
+        echo '<br>';
+        echo "<a href=\"http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . "$f\">$f</a>";
+        echo '<br>';
     }
+}
 ?>
-
 </body>
 </html>

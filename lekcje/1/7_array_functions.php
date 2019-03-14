@@ -60,4 +60,10 @@ print_r($new_array);
 sort($array1,SORT_NUMERIC);
 print_r($array1);
 
+$result = array_merge($array1, $array2);
+
+print_r($result);
+shuffle($result);
+print_r($result);
+
 echo '</pre>';
