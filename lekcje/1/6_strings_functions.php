@@ -11,12 +11,19 @@
 
 $s = 'abcdefghijklmn';
 
-echo strtoupper($s); //strtolower
+echo strtoupper($s); // kowersja do dużych liter - strtolower funckacaj odwrotna
 
 echo '<hr>';
 
-$str_to_explode = 'Janek,Franek,Tytus,Romek,Atomek';
+$str_to_explode = 'Janek,Franek,Tytus,Romek,Atomek'; //funkcja rozdzielająca tsring po znaku tworzą tablicę
 $ex_array = explode(',',$str_to_explode);
+
+//odwrotność funcki rozdzielającej
+
+$implode_string = implode('@',$ex_array);
+
+echo $implode_string;
+
 echo '<pre>';
 
 print_r($ex_array);
@@ -25,6 +32,7 @@ echo '</pre>';
 
 echo '<hr>';
 
+// podmiana w łańcuchu znaków
 $to_replace = 'fg';
 
 echo str_replace($to_replace,'@',$s);
@@ -62,6 +70,7 @@ echo substr($email, $pos_at+1);
 
 echo '<hr>';
 
+//Wypełnianie tekstu danymi ze zmiennych
 $id = 800035679;
 $name = 'Jan';
 
@@ -70,6 +79,9 @@ echo sprintf($format, $name, $id);
 
 echo '<hr>';
 
+//format wyświelania liczby - zwaraca liczbę w postaci string
 $number = 5111234.56;
-
-echo number_format($number, 2, ',', ' ');
+$nr_format = number_format($number, 2, ',', ' ');
+echo $nr_format;
+echo '<br>';
+echo gettype($nr_format);

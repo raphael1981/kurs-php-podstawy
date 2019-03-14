@@ -30,9 +30,11 @@ $array2 = [
 
 echo '<pre>';
 
+//dzielenie tablicy namniejsze podtablice
 print_r(array_chunk($array1,2));
 
 
+//szukanie wartości w tablicy
 $szukaj_1 = array_search('Został',$array2);
 if($szukaj_1){
     echo 'zanaleziono na pozycji '.$szukaj_1;
@@ -50,19 +52,24 @@ if($szukaj_2){
     echo 'nie zanaleziono';
 }
 
+//sortowanie
 sort($array2,SORT_STRING|SORT_FLAG_CASE);
 
 print_r($array2);
 
+//revers tablicy
 $new_array = array_reverse($array2);
 print_r($new_array);
 
 sort($array1,SORT_NUMERIC);
 print_r($array1);
 
+//łączenie
 $result = array_merge($array1, $array2);
 
 print_r($result);
+
+//losowe sortowanie
 shuffle($result);
 print_r($result);
 

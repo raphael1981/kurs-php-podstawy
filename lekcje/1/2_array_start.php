@@ -34,7 +34,8 @@ $tab = [
 
 var_dump($tab);
 
-//
+//przykład tablicy asocjacyjnej która charakteryzuje się kluczami w postaci string
+
 
 $arrayAssoc = [
   'name'=>'Bob',

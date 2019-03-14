@@ -1,5 +1,6 @@
 <?php
 
+//przykład przechowywania danych w obiekcje stdClass
 $object = new stdClass();
 $object->name = 'Rafał';
 $object->email = "test@wp.pl";
