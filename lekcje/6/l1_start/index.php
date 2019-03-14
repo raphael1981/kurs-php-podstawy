@@ -16,8 +16,9 @@ $s1->wystawOcene([
     'ocena'=>3
 ]);
 
-if($s1->getOcenaByName('Bio')['success']){
-    
-}else{
-    
-}
+$s1->wystawOcene([
+    'przedmiot'=>'Bio',
+    'ocena'=>5
+]);
+
+print_r($s1->getOcenyByName('Bio'));

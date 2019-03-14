@@ -8,7 +8,7 @@ require_once("classes/School.php");
 $s1 = new School();
 $s1->createRecord([
     'name'=>'Nazwa szkoły',
-    'registration_number'=>microtime(),
+    'registration_number'=>date('Y-m-h-H-i-s').microtime(),
     'created_at'=>date('Y-m-d H:i:s')
 ]);
 

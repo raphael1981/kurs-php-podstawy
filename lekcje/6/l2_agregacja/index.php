@@ -31,5 +31,5 @@ $g2->addStudentToGroup($ns);
 
 
 echo '<pre>';
-print_r($ns);
+print_r($g2);
 echo '</pre>';
