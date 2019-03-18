@@ -5,7 +5,7 @@ interface CrudInterface{
     public function create($array);
     public function read();
     public function update($pesel,$array);
-    public function delete($pesel);
+    public function delete();
 
 }
 
@@ -33,7 +33,7 @@ class Person implements CrudInterface{
         //zmień dane osoby o peselu
     }
 
-    public function delete($pesel){
+    public function delete(){
         //usuń osobę po peselu
     }
 
@@ -48,3 +48,13 @@ class Person implements CrudInterface{
     }
 
 }
+
+$person = new Person(34343434);
+$person->delete();
+
+$person2 = new Person();
+$person2->create([
+   'email'=>'j@wp.pl',
+   'name'=>'John',
+   'pesel'=>466464646
+]);
