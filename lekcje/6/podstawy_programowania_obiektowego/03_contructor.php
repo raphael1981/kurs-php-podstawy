@@ -51,7 +51,7 @@ $person->email = 'exemple@wp.pl';
 //tworzenie obiektu klasy PersonOtherClass jest także nazywana instancją klasy - przekazując wartosc do konstruktora
 $person2 = new PersonOtherClass();
 
-//przypisywanie właściwości w tym przypadku prywatnych
+//przypisywanie właściwości w tym przypadku publicznych
 $person2->name = 'Tom';
 $person2->email = 'exemple@wp.pl';
 $person2->setPesel(76735673756);

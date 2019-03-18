@@ -9,7 +9,7 @@ class PersonClass{
 
     function __construct($pesel)
     {
-        $this->pesel = 738563658;
+        $this->pesel = $pesel;
     }
 
     public function removePersonFromDB(){
@@ -27,7 +27,7 @@ class PersonClass{
 //tworzenie obiektu klasy PersonClass jest także nazywana instancją klasy - przekazując wartosc do konstruktora
 $person = new PersonClass(45354743573453754);
 
-//przypisywanie właściwości w tym przypadku prywatnych
+//przypisywanie właściwości w tym przypadku publicznych
 $person->name = 'Tom';
 $person->email = 'exemple@wp.pl';
 $person->removePersonFromDB();

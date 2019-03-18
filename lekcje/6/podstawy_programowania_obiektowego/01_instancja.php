@@ -12,7 +12,7 @@ class PersonClass{
 //tworzenie obiektu klasy PersonClass jest także nazywana instancją klasy
 $person = new PersonClass();
 
-//przypisywanie właściwości w tym przypadku prywatnych
+//przypisywanie właściwości w tym przypadku publicznych
 $person->name = 'Tom';
 $person->email = 'exemple@wp.pl';
 
