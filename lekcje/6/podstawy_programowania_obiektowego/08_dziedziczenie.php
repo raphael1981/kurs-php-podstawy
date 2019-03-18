@@ -1,5 +1,5 @@
 <?php
-
+//klasa bazowa można utworzyć z niej obiekt jednak nie możemy używać metod i własciwosci protected z poza klasy
 class PersonClass
 {
 
@@ -17,8 +17,13 @@ class PersonClass
         echo 'dodaje do tabeli '.$db_table.'<br>';
     }
 
-}
+    //wykonanie addToBase można wywołąć za pośrednictwem prywatnej
+    public function addOtherToBase($db_table){
+        $this->addToBase($db_table);
+    }
 
+}
+//klasa dziedzicząca po PersonClass bardziej szczegółowa i np. posidajaca dodatkowe metody itd
 class Student extends PersonClass {
 
     function __construct($pesel)
@@ -49,6 +54,10 @@ class Teacher extends PersonClass {
     }
 
 }
+
+
+$person = new PersonClass(454664);
+$person->addOtherToBase('inna_tabel');
 
 
 $student = new Student(67457356);
