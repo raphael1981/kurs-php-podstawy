@@ -49,6 +49,7 @@ class Person implements CrudInterface{
 
 }
 
+
 $person = new Person(34343434);
 $person->delete();
 
