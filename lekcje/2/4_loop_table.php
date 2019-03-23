@@ -1,27 +1,38 @@
 <?php
 
+$liczba = 7;
+
 echo '<table border="1">';
 
+    for($i=0;$i<$liczba;$i++){
 
-for ($i=1;$i<6;$i++){
+        echo '<tr>';
 
-    echo '<tr>';
+        $x=$liczba-1;
+        
+        for($j=0;$j<$liczba;$j++){
 
-    for($j=1;$j<6;$j++){
+            echo '<td>';
 
-        echo '<td>';
+            if($i==$j && $i!=($liczba-1)/2){
+                echo '@';
+            }
 
-        if($i==$j){
-            echo '@';
+            // if($i==(4-$j)){
+            //     echo '@';
+            // }
+
+            if($i==$x){
+                echo '@';
+            }
+
+            $x--;
+
+            echo '</td>';
+
         }
 
-        echo '</td>';
-
+        echo '</tr>';
     }
-
-    echo '<tr>';
-
-}
-
 
 echo '</table>';
