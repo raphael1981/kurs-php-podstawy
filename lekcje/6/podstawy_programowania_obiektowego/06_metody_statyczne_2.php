@@ -7,6 +7,7 @@
 */
 
 
+
 class PersonHelper{
 
     public static function checkIsPersonEmailOk($email){
@@ -21,6 +22,7 @@ class PersonHelper{
     }
 
 }
+
 
 
 class PersonClass{

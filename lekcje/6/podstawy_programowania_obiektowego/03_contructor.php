@@ -26,7 +26,7 @@ class PersonOtherClass{
 
     function __construct($pesel=0)
     {
-        $this->pesel = 738563658;
+        $this->pesel = $pesel;
     }
 
 

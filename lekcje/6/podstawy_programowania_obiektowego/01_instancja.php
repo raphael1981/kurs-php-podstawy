@@ -3,7 +3,7 @@
 class PersonClass{
 
     //własciwosci klasy (imie i email)
-    public $name;
+    public $name = "J";
     public $email;
 
 
