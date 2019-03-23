@@ -1,5 +1,18 @@
 <?php
 
+$s = 'abcdefghijklmn';
+
+echo substr($s,0,2); //ab - zaczynamy od pierwszeggo znaku i pobieramy łańcuch długości 2 znaków
+echo '<br>';
+echo substr($s,-2,2); //mn - zaczynamy od znaku 2 od końca i pobiermy łańcuch długości 2 znaków
+echo '<br>';
+echo substr($s, 1,-1); //bcdefghijklm - zaczynamy od znaku 2 i poberamy łańcuch długosci liczy z różnicy(długość całego - 1)
+echo '<br>';
+echo substr($s, -4,-2); //kl - zaczynamy od znaku 4 od końca i poberamy łańcuch długosci liczy z różnicy(długość całego - 2)
+echo '<br>';
+
+die();
+
 //explode
 //strpos
 //strlen
@@ -10,6 +23,15 @@
 //number_format
 
 $s = 'abcdefghijklmn';
+
+echo substr($s,0,2); //ab - zaczynamy od pierwszeggo znaku i pobieramy łańcuch długości 2 znaków
+echo '<br>';
+echo substr($s,-2,2); //mn - zaczynamy od znaku 2 od końca i pobiermy łańcuch długości 2 znaków
+echo '<br>';
+echo substr($s, 1,-1); //bcdefghijklm - zaczynamy od znaku 2 i poberamy łańcuch długosci liczy z różnicy(długość całego - 1)
+echo '<br>';
+echo substr($s, -4,-2); //kl - zaczynamy od znaku 4 od końca i poberamy łańcuch długosci liczy z różnicy(długość całego - 2)
+echo '<br>';
 
 echo strtoupper($s); // kowersja do dużych liter - strtolower funckacaj odwrotna
 
