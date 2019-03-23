@@ -16,6 +16,7 @@ echo '<table border="1">';
 
             if($i==$j && $i!=($liczba-1)/2){
                 echo '@';
+                
             }
 
             // if($i==(4-$j)){
