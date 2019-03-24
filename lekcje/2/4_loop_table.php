@@ -19,10 +19,6 @@ echo '<table border="1">';
                 
             }
 
-            // if($i==(4-$j)){
-            //     echo '@';
-            // }
-
             if($i==$x){
                 echo '@';
             }
