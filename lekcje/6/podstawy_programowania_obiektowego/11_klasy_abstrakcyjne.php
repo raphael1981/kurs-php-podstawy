@@ -34,7 +34,7 @@ class Student extends PersonAbsClass {
     }
 
     function showInfoAboutDatabase(){
-        echo $this->info_about_datebase;
+       return $this->info_about_datebase;
     }
 
 }

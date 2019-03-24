@@ -18,9 +18,9 @@ class PersonClass
     }
 
     //wykonanie addToBase można wywołąć za pośrednictwem prywatnej
-    public function addOtherToBase($db_table){
-        $this->addToBase($db_table);
-    }
+    // public function addOtherToBase($db_table){
+    //     $this->addToBase($db_table);
+    // }
 
 }
 //klasa dziedzicząca po PersonClass bardziej szczegółowa i np. posidajaca dodatkowe metody itd
@@ -56,8 +56,8 @@ class Teacher extends PersonClass {
 }
 
 
-$person = new PersonClass(454664);
-$person->addOtherToBase('inna_tabel');
+// $person = new PersonClass(454664);
+// $person->addOtherToBase('inna_tabel');
 
 
 $student = new Student(67457356);

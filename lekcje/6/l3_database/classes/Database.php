@@ -3,7 +3,7 @@
 class Database{
     
     private $dbhost = 'localhost';
-    private $dbname = 'base_schools';
+    private $dbname = 'my_base';
     private $dbuser = 'root';
     private $dbpass = '';
     
@@ -29,6 +29,8 @@ class Database{
             $st = $this->dbh->prepare($sql); 
 
             try { 
+
+                // print_r(array_values($array));
 
                 $this->dbh->beginTransaction(); 
                 $st->execute(array_values($array)); 

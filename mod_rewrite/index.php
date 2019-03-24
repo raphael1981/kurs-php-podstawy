@@ -18,8 +18,8 @@ echo '</pre>';
 <body>
 
 <ul>
-    <li><a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>index.php?alias=o-nas&page=1">O nas</a></li>
-    <li><a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>o-nas/1">O nas (przepisany)</a></li>
+    <li><a href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/kurs-php-podstawy/mod_rewrite/index.php?alias=o-nas&page=1">O nas</a></li>
+    <li><a href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/kurs-php-podstawy/mod_rewrite/o-nas/1">O nas (przepisany)</a></li>
 </ul>
 
 </body>

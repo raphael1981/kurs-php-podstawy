@@ -1,3 +1,4 @@
 <?php
 
-print_r($_GET);
+require __DIR__."/autoload.php";
+
