@@ -3,9 +3,11 @@ echo '<pre>';
 $array = [];
 
 
-array_push($array,'test'); //dodanie nowego elementu do tablicy jako następny "na końcu"
-array_push($array,'test3'); //--||--
-array_unshift($array,'test4'); //dodanie nowego elementu do tablicy jako pierwszy element "na początku"
+array_push($array, 'test'); //dodanie nowego elementu do tablicy jako następny "na końcu"
+array_push($array, 'test3'); //--||--
+array_unshift($array, 'test4'); //dodanie nowego elementu do tablicy jako pierwszy element "na początku"
+
+array_unshift($array, 'test5');
 
 var_dump($array);
 
@@ -13,6 +15,8 @@ var_dump($array);
 
 $array[1] = 'test2'; // "test 2" nadpisuje wartość z indexem 1
 $array[0] = 'super test'; // "super test" nadpisuje wartość z indexem 0
+$array[] = 'cos';
+$array[6] = 'cos6';
 
 var_dump($array);
 
@@ -23,11 +27,11 @@ echo $array[2]; //
 //tablice mogą mieć w php rożne typy wartośći i można ją od razu zdefiniować
 
 $tab = [
-    1,
-    'tekst',
-    [],
-    4.5,
-    true
+  1,
+  'tekst',
+  [],
+  4.5,
+  true
 ];
 //czyli tablica może zawierać jako wartosc inną tablicę
 
@@ -38,10 +42,14 @@ var_dump($tab);
 
 
 $arrayAssoc = [
-  'name'=>'Bob',
-  'email'=>'test@wp.pl',
-  'id_number'=>97465
+  'name' => 'Bob',
+  'email' => 'test@wp.pl',
+  'id_number' => 97465
 ];
+
+foreach ($arrayAssoc as $k => $v) {
+  echo $k . "=>" . $v . '<br>';
+}
 
 print_r($arrayAssoc);
 

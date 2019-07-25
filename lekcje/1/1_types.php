@@ -1,6 +1,6 @@
 <?php
 //Typy zmiennych
-$nazwa=3; //integer liczba całkowita
+$nazwa = 3; //integer liczba całkowita
 $number = 3.5; //float liczba zmienno przecinkowa
 
 $string  = 'string'; //łańcuch znaków
@@ -17,9 +17,3 @@ $null = null;
 
 $array = [];
 $object = new stdClass();
-
-
-
-
-
-
