@@ -4,32 +4,34 @@ $liczba = 7;
 
 echo '<table border="1">';
 
-    for($i=0;$i<$liczba;$i++){
+for ($i = 0; $i < $liczba; $i++) {
 
-        echo '<tr>';
+    echo '<tr>';
 
-        $x=$liczba-1;
-        
-        for($j=0;$j<$liczba;$j++){
+    $x = $liczba - 1;
 
-            echo '<td>';
+    for ($j = 0; $j < $liczba; $j++) {
 
-            if($i==$j && $i!=($liczba-1)/2){
-                echo '@';
-                
-            }
+        echo '<td>';
 
-            if($i==$x){
-                echo '@';
-            }
+        // if ($i == $j) {
+        //     echo '@';
+        // }
 
-            $x--;
-
-            echo '</td>';
-
+        if ($i == $j && $i != ($liczba - 1) / 2) {
+            echo '@';
         }
 
-        echo '</tr>';
+        if ($i == $x) {
+            echo '@';
+        }
+
+        $x--;
+
+        echo '</td>';
     }
+
+    echo '</tr>';
+}
 
 echo '</table>';

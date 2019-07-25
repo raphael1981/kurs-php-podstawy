@@ -1,2 +1,3 @@
 <?php
-unset($_COOKIE['cookie_data']);
+// unset($_COOKIE['cookie_data']);
+setcookie("cookie_data", 'test', time());

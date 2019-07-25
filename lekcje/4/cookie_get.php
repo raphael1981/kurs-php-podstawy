@@ -1,3 +1,4 @@
 <?php
-
-echo $_COOKIE['cookie_data'];
+if (isset($_COOKIE['cookie_data'])) {
+    echo $_COOKIE['cookie_data'];
+}
