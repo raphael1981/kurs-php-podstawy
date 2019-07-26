@@ -1,6 +1,7 @@
 <?php
 
-class PersonClass{
+class PersonClass
+{
 
     //własciwosci klasy (imie i email)
     public $name;
@@ -11,33 +12,32 @@ class PersonClass{
     {
         $this->pesel = 738563658;
     }
-
-
-
 }
 
 //klasa w której konstruktor posiada wartosc domyślną
-class PersonOtherClass{
+class PersonOtherClass
+{
 
     //własciwosci klasy (imie i email)
     public $name;
     public $email;
     private $pesel;
 
-    function __construct($pesel=0)
+    function __construct($pesel = 0)
     {
         $this->pesel = $pesel;
     }
 
 
-    public function getPesel(){
+    public function getPesel()
+    {
         return $this->pesel;
     }
 
-    public function setPesel($pesel){
+    public function setPesel($pesel = 0)
+    {
         $this->pesel = $pesel;
     }
-
 }
 
 //tworzenie obiektu klasy PersonClass jest także nazywana instancją klasy - przekazując wartosc do konstruktora
